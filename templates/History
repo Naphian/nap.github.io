@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your History</title>
+</head>
+<body>
+    <h1>My History</h1>
+    <!-- Content about your history -->
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

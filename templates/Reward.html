@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificates</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <style>
+    .center-image
+    {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: auto;
+    }
+
+    h3
+    {
+      text-align:center; /*  Adjust as necessary */
+      background-color:lightgreen;
+    }
+    body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: cover;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+  }
+    p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    /*text-align: center;
+    background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;background-color:powderblue;">Rewards and Certifications: The Milestones That Shaped My Journey</h1>
+<p>Navigating the diverse landscapes of academia and skill development is
+  never a linear path. Along the way, I've achieved milestones that have
+  reinforced my commitment to excellence and learning. These certificates
+  and accolades not only reflect my technical and academic aptitude but also
+  mirror the discipline, perseverance, and grit required to attain them.</p>
+<h2 style="text-align:center;background-color:lightgreen;">National Ethiopia Examination (8<sup>th</sup> and 10<sup>th</sup> grade)</h2>
+<p>My educational journey began with a noteworthy performance in the National
+  Ethiopia Examination during 10th grade, where I secured Straight A's in a
+  range of subjects. These included Amharic, English, Mathematics, Physics,
+  Biology, Chemistry, Civic Education, and History. The document showcasing
+  these achievements will be attached, but more than just a piece of paper,
+  these grades were my first stepping stones in the world of rigorous academic
+  commitment.</p>
+<h3>8<sup>th</sup> grade Ethiopia Ministry Exam's result and Certificate</h3>
+<img src="{{ url_for('static', filename='8th_grade.jpg') }}" alt="Your Photo" class="center-image">
+<h3>10<sup>th</sup> grade Ethiopia National Exam's result and Certificate</h3>
+<img src="{{ url_for('static', filename='10th_grade.jpg') }}" alt="Your Photo" class="center-image">
+<h2 style="text-align:center;">GED Certificate </h2>
+<p>Recognizing the need for a more flexible yet challenging educational
+  framework, I opted for the General Educational Development (GED) route
+  for my 11th and 12th grades. While Mathematics, English, and Natural
+  Sciences were my strong suits, Social Studies presented itself as an
+  academic nemesis—almost a rite of passage that made me more resilient
+  and focused. And while it may not be my favorite, it taught me the value
+  of pushing through subjects that don't come naturally.</p>
+<!--<img src="GED%20Certificate.png" alt="Your Photo" class="center-image">-->
+<img src="{{ url_for('static', filename='GED Certificate.png') }}" alt="Your Photo" class="center-image">
+<h2 style="text-align:center;">College Certificates</h2>
+<p>With a leap of faith, I stepped into college life, and it paid off
+  exceedingly well. Achieving a GPA of 3.8 wasn't just an academic feat;
+  it was a testament to the skills and discipline I had honed over the years.
+  The transcript that I'll attach stands as proof of this exciting chapter in
+  my life.</p>
+<h3>Associate Degree of Physics</h3>
+<!--<img src="Associate%20Degree%20of%20Physics.png" alt="Your Photo" class="center-image">-->
+<img src="{{ url_for('static', filename='Associate Degree of Physics.png') }}" alt="Your Photo" class="center-image">
+<h3>Associate Degree of Mathematics</h3>
+<!--<img src="Associate%20Degree%20of%20Mathematics.png" alt="Your Photo" class="center-image">-->
+<img src="{{ url_for('static', filename='Associate Degree of Mathematics.png') }}" alt="Your Photo" class="center-image">
+<h3>Degree of Completion</h3>
+<!--<img src="LATTC%20Completion%20Degree.png" alt="Your Photo" class="center-image">-->
+<img src="{{ url_for('static', filename='LATTC Completion Degree.png') }}" alt="Your Photo" class="center-image">
+<h2 style="text-align:center;background-color:lightgreen;">UCLA Bachelor's Degree</h2>
+<p>Finally, the journey culminated at the University of California, Los Angeles (UCLA),
+  where I earned my Bachelor's Degree in Aerospace Engineering with a GPA of
+  2.8. While the numbers may not tell the whole story, they certainly don't
+  capture the blood, sweat, and tears behind surviving one of the most
+  challenging engineering courses. A 2.8 in Aerospace Engineering at UCLA
+  is a narrative of relentless work, continuous learning, and sheer willpower.</p>
+<!-- Please post the certificate here-->
+<P>To be available so soon!</P>
+<h2 style="text-align:center;background-color:lightgreen;">Conclusion: The Essence of Achievement</h2>
+<p>The certificates and grades you see attached to this section are not
+  just symbols of academic success; they're monuments to the arduous yet
+  fulfilling journey I've undertaken. Each grade and every certificate stands
+  as a chapter in my life story—a story of trials, triumphs, and unyielding
+  persistence. <br><br>Thank you for taking the time to explore these important
+  milestones with me. I hope they give you a deeper insight into both my
+  professional capabilities and personal ambitions. After all, these
+  achievements are not the end but the foundation upon which I intend
+  to build an even more compelling future.
+</p>
+<!--<div style="text-align: center;">
+  <a href="Closing%20Thoughts.html" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="Lesson%20from%20life.html" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="AI_web.html" style="font-size: 24px; color: red;">Back to Home</a>
+</div>-->
+<div style="text-align: center;">
+  <a href="{{ url_for('closing_thoughts') }}" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="{{ url_for('lesson_from_life') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title style="background-color:powderblue;">Your History</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+ <style>
+  body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: cover;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    /*background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+  </style>
+</head>
+<body>
+    <h1 style="text-align:center;background-color:powderblue;">My History</h1>
+    <!-- Content about your history -->
+    <h2 style="background-color:lightgreen;text-align: center; font-size: 30px">Intro</h2>
+    <p>Hello everyone, and welcome. Allow me to introduce
+      myself - I am Kaleab E. Alamnew. My life&apos;s journey began
+      on the 17th of July 1998, when I took my first breath
+      in the bustling metropolis of Addis Ababa, Ethiopia.
+      My formative years unfurled in the picturesque village
+      of Mekanisa, a hidden gem that holds an irreplaceable
+      corner in my heart. Here, I resided in a secluded,
+      three-story haven, void of immediate neighbors, which
+      offered me the sanctity of solitude.</p>
+    <p>Picture a young boy, navigating through life on a bicycle,
+      each pedal stroke propelling him not just down the road but
+      also further into his own thoughts, dreams, and aspirations.
+      The relative quietude of Mekanisa&apos;s lanes was the ideal
+      backdrop against which my imagination came alive. I
+      experienced a unique kind of freedom, as expansive as the
+      skies above and as intimate as the tales I would one day share.
+      Let me quote Paulo Coelho here: "Freedom is not the absence
+      of commitments, but the ability to choose &mdash; and commit myself
+      to &mdash; what is best for me." Mekanisa gave me that invaluable
+      freedom to choose, to dream, and to become.</p>
+    <p>Life presented me with a new chapter when I moved to a
+      sprawling condominium complex situated in the heart of the city,
+      near the iconic Semen Hotel and closely monitored by three
+      police stations. Imagine transitioning from a serene village
+      to an animated microcosm of hundreds of families. It was a
+      breathtaking contrast. Day in and day out, the condominium was
+      a lively tapestry of social engagements, communal laughter, and
+      unforgettable shared experiences. The essence of community was
+      no longer a concept but a vivid, palpable reality. I was
+      surrounded by neighbors who would eventually become more than
+      just familiar faces&mdash;they became my extended family.</p>
+    <p>It&apos;s crucial to mention my educational milestones, as they
+      form the cornerstone of my intellectual and emotional growth.
+      My school years began in Betelhem, setting the academic
+      foundation before I shifted to Jiva High School in 2013.
+      This school wasn&apos;t merely a place of learning; it was a second
+      home. I succeeded academically, certainly, but Jiva gave me
+      more than grades. It bestowed upon me friendships that I
+      treasure, memories that I hold dear, and life lessons that
+      have shaped my moral compass. Gratitude fills my heart when
+      I think of every teacher, every friend, who contributed to
+      my transformation. They didn&apos;t just teach me; they believed
+      in me, and in doing so, changed the trajectory of my life.</p>
+    <p>Then came 2017, a watershed year. Fresh off the high of
+      achieving stellar grades in Ethiopia&apos;s Matriculation exams,
+      I transplanted my dreams and ambitions to the fertile grounds
+      of the United States. With each passing semester, from an
+      anonymous college to the hallowed halls of UCLA, my character
+      was forged through rigorous academics and soul-enriching
+      friendships. The journey, I must confess, was both challenging
+      and exhilarating. Yet, every obstacle conquered made the
+      triumphs all the more rewarding. As I walked across the
+      graduation stage in 2023, I realized that my American dream,
+      once a flicker of possibility, had been brilliantly realized.</p>
+    <p>Today, I revel in the life that I&apos;ve created here in the USA.
+      I stand here, as a living testament to the power of dreams and
+      the indomitable will that turns them into reality. Like the
+      iconic Maya Angelou said, "I can be changed by what happens
+      to me. But I refuse to be reduced by it." My journey, filled
+      with its ups and downs, has not reduced me; instead, it has
+      enriched me in ways too profound to articulate.</p>
+    <p>So, why do I share my story? I share it as a canvas upon
+      which you can project your own aspirations and challenges,
+      a tale of relentless ambition, and unyielding resilience.
+      It is a reminder that each of us is the author of our destiny.
+      In the narrative of my life, you might find the inspiration
+      to be the hero of your own.</p>
+    <p>Thank you for allowing me to share this voyage with you.
+      Until the next chapter.</p>
+<div style="text-align: center;">
+  <a href="{{ url_for('education_history') }}" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="{{ url_for('ai_web') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>
+

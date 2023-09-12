@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <style>
+    h2
+    {
+      text-align: center;
+    }
+    h3
+    {
+      text-align: center;
+      background-color: lightpink;
+      font-family: "Times New Roman";
+      font-size: 24px;
+    }
+
+  body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: auto;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: repeat; /* Do not repeat the image */
+  }
+  p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    /*text-align: center;
+    background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+  .image-row
+  {
+  display: flex;
+  justify-content: center;
+  }
+
+.image-container
+{
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.side-by-side-image
+{
+  max-width: 100%;
+}
+
+.caption
+{
+  font-size: 18px;
+  color: whitesmoke;
+}
+.important-note {
+  font-size: 18px;
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;background-color:powderblue;"><ins>Experience  + Projects</ins></h1>
+  <h2 style="background-color:lightgreen;">The Art of Coding: More Than Just Ones and Zeros</h2>
+  <p>When you think of art, chances are you picture something visually
+    stunning—a timeless painting, a breathtaking sculpture, or perhaps a
+    captivating performance. But what about the invisible art, the art that
+    powers our modern world? Yes, I'm talking about coding. To the uninitiated,
+    it may look like random sequences of numbers, letters, and symbols. But
+    each line of code is a brushstroke, and with it, I paint the canvas of
+    possibility.</p>
+  <h2 style="background-color:lightgreen;">Experience: The Evolution of My Coding Language Palette</h2>
+  <p>My journey into the world of coding began in college. Starting off with
+    mainstream languages like Java, JavaScript, Ruby, C#, and C++, I was
+    initially like an artist experimenting with primary colors. Each language
+    opened a new avenue of expression, allowing me to dabble in diverse
+    projects ranging from simple webpage designs to complex algorithms.
+    However, university brought a whole new spectrum of colors to my coding palette. The high stakes of
+    aerospace engineering required specialized tools: MATLAB for numerical
+    computations, CAD for precision design, Ansys for simulation, and Rocket
+    Lab software for real-world aerospace applications. Each tool was a new
+    instrument, a new medium, broadening the canvas on which I could
+    translate my ideas into reality.</p>
+
+  <h2 style="background-color:lightgreen;">Projects: When the Going Gets Tough</h2>
+  <p>Let me take you behind the scenes, to the less glamorous side of this
+    journey. Learning these advanced tools was no walk in the park.
+    Remember your first time trying to ride a bicycle? Wobbly, unsure, and,
+    let's admit it, a bit terrifying. That's how I felt diving into MATLAB
+    and Ansys. Each project felt like a mountain to climb—daunting yet
+    irresistibly challenging. I had to grapple with sleepless nights
+    and endless lines of code that seemed to laugh at my confusion.
+    However, each error message was a lesson in disguise, and every
+    debugging session brought me one step closer to fluency in this
+    complex language. The projects I worked on were as diverse as they
+    were challenging, from designing 3D models of aircraft components
+    to simulating airflows over wings.</p>
+  <h2 style="background-color:lightgreen;">Coding: A Reflection of My Journey</h2>
+  <p>Below, you'll find snapshots of my work—a sneak peek into the
+    years of practice, persistence, and passion that have shaped my
+    coding skills. Each image captures a moment of revelation, of
+    triumph, of another obstacle conquered. So, as you scroll through
+    these glimpses of my work, remember: coding is more than just ones
+    and zeros. It's a form of art, an expression of problem-solving, and
+    above all, it's the embodiment of the challenges I've faced and overcome.</p>
+  <!--pls show some works-->
+  <h2 style="background-color:lightgreen;">Sample of my works from each applications</h2>
+<!--<div class="image-container">
+  <img src="{{ url_for('static', filename='C++_code1_out.png') }}" class="result" alt="Result">
+  <img src="{{ url_for('static', filename='C++_code1.png') }}" class="code" alt="Code">
+  <p class="caption">Fig.1 code and result for C++</p>
+</div><br>-->
+  <h3>C++</h3>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code1.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 1.1) Code for C++ (Record stud's score and average)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code1_out.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 1.2) Result for C++ (Record stud's score and average)</p>
+  </div>
+  </div>
+    <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code2.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 2.1) Code for C++ (Comparing values)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code2_out.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 2.2) Result for C++ (Comparing values)</p>
+  </div>
+  </div>
+      <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code3.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 3.1) Code for C++ (Daily sales)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code3_out.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 3.2) Result for C++ (Daily sales)</p>
+  </div>
+  </div>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code4.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 4.1) Code for C++ (Creating Password)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='C++_code4_out.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 4.2) Result for C++ (Creating Password)</p>
+  </div>
+  </div>
+  <h3>Java</h3><br>
+  <!--https://1drv.ms/p/s!AmLbvU_NTklrkhbE3dhzlEtWJBf7?e=6bViFv-->
+  <br><a href="https://1drv.ms/p/s!AmLbvU_NTklrkhbE3dhzlEtWJBf7?e=6bViFv" target="_blank" style="font-size: 24px; background-color: dodgerblue; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer;text-align: center">View My PowerPoint for sample Java code and result</a><br>
+<h3>Matlab</h3>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Matlab_Rocket1.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 5.1) MATLAB's Trajectory Code</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Matlab_Rocket2.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 5.2) MATLAB Code (conti.)</p>
+  </div>
+  </div>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Matlab_Rocket3.png') }}" alt="Code" class="side-by-side-image">
+    <p class="caption">Fig 5.3) MATLAB Code (conti.)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Matlab_Rocket4.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 5.4) MATLAB Result (output)</p>
+  </div>
+  </div>
+<h3>CAD</h3>
+  <h4 style="text-align: center;color:black;font-size: 20px; background-color: lightgoldenrodyellow">Team's work</h4>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project.png') }}" alt="CAD" class="side-by-side-image">
+    <p class="caption">Fig 6.1) CAD's Isometric (X-wing Fighter)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project1.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 6.2) CAD's Back View (X-wing Fighter)</p>
+  </div>
+  </div>
+  <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project2.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 6.3) CAD's Side View (X-wing Fighter)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project3.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 6.4) CAD's Assembly Drawing (X-wing Fighter)</p>
+  </div>
+  </div>
+    <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project4.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 6.5) CAD's Assembly Drawing for small parts (X-wing Fighter)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_final_project5.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 6.6) CAD's Full Assembly Drawing (X-wing Fighter)</p>
+  </div>
+  </div>
+   <h4 style="text-align: center;color:black;font-size: 20px; background-color: lightgoldenrodyellow">My projects</h4>
+      <div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project1.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.1) CAD's Isometric View (FEA Project)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project2.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.2) Simulation of FEA from CAD</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project3.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.3) FEA Model Info</p>
+  </div>
+  </div><br>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project4.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.4) FEA Material Properties </p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project5.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.5) FEA Loads and Fixtures</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project6.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.6) FEA Mesh Info</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_project7.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 7.7) FEA Static Pulling test </p>
+  </div>
+  </div>
+<h3>Ansys</h3>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Ansys1.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 8.1) The Simulation of Airfoil </p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Ansys2.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 8.2) The Detail Properties in Ansys for Airfoil</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='Ansys3.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 8.3) The Simulation of Nosecone Airfoil</p>
+  </div>
+</div>
+<br><h3>Rocket Lab using all software including Matlab, Ansys and CAD</h3><br>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket1.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.1) CAD's Isometric View (Multi-Stage Rocket Project)</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket2.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.2) Simulation of FEA and CFD</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket3.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.3) Simulation of FEA and CFD</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket4.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.4) Simulation of FEA and CFD</p>
+  </div>
+</div>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket5.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.5) Simulation of Ansys Using CAD</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket6.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.6) Simulation of Ansys Using CAD</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket7.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.7) Rocket Design using OpenRocket Software</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket8.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.8) Theoretical Trajectory using MATLAB</p>
+  </div>
+</div>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket9.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.9) Theoretical Trajectory using MATLAB</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket10.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.10) Structure and Manufacturing</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket11.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.11) Avionic</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket13.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.12) Matlab Code</p>
+  </div>
+</div>
+<div class="image-row">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket14.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.13) Matlab Code</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='CAD_Rocket12.png') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.14) Final Multi-Stage Rocket Design</p>
+  </div>
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='On_site_rocket_launch.jpg') }}" alt="Result" class="side-by-side-image">
+    <p class="caption">Fig 9.15) Picture of myself at site launching the finalized rocket with team members at UCLA</p>
+  </div>
+</div>
+<style>
+  .video-container {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* Allows items to wrap to the next line */
+  }
+  .video-container video, .video-container img {
+   max-width: 100%;  /* Automatically adjust the width */
+   height: auto;  /* Maintain aspect ratio */
+  }
+
+  .caption {
+  font-size: 18px;
+  text-align: center;  /* Center the caption */
+  margin-top: 0;
+  }
+  .video-item {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+</style>
+<div class="video-container">
+  <div class="video-item">
+    <video controls>
+      <source src="{{ url_for('static', filename='Launched_our_rocket.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="caption">Fig 9.16) Launched our multi-stage rocket</p>
+  </div>
+  <div class="video-item">
+    <video controls>
+      <source src="{{ url_for('static', filename='Deployed_parachute.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="caption">Fig 9.17) Deployed the parachute and return the payload safely</p>
+  </div>
+  <div class="video-item">
+    <img src="{{ url_for('static', filename='Teamwork.jpg') }}" alt="Team work" width=auto>
+    <p class="caption">Fig 9.18) Team work</p>
+  </div>
+</div>
+
+  <p class="important-note">Note: All the code snippets, results, and images above are simplified and compressed versions, intended for showcase purposes only.</p>
+   <h2 style="background-color:lightgreen;">Conclusion: Beyond the Code</h2>
+  <p>As you browse through the lines of code, complex algorithms, and
+    intricate projects showcased in this section, it's essential to realize
+    that they aren't just digital constructs—they are a testament to an
+    incredible journey. A journey that began with bewildering error messages
+    and sleepless nights, but culminated in deep understanding and meaningful
+    solutions. These projects represent more than just programming
+    skills; they capture a mindset, a tenacity for problem-solving, and
+    a relentless pursuit of excellence. They are the tangible outcomes of
+    countless hours spent learning, experimenting, failing, and succeeding.
+    They stand as evidence of not only technical prowess but also the
+    personal growth that comes with grappling with difficult problems. Each
+    snippet of code embodies a challenge met, a lesson learned, a
+    concept grasped. And as you navigate through the visual depictions
+    of these projects, remember that for each line of code you see,
+    there were multiple drafts, tests, and iterations that you don't—the
+    unseen effort behind the visible result.</P>
+  <p>Thank you for taking the time to delve into this segment of my portfolio.
+    I hope it has offered you a glimpse into my world—a world shaped by
+    both the struggle and the beauty of mastering complexity. After all,
+    in coding as in life, it's not about the destination; it's about
+    the journey. Feel free to reach out if you're intrigued, have questions,
+    or simply want to discuss the fascinating world of programming further.
+    I'm always eager to engage in intellectual dialogues and collaborative
+    ventures.</p>
+<!--<div style="text-align: center;">
+  <a href="Lesson%20from%20life.html" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="Education%20History.html" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="AI_web.html" style="font-size: 24px; color: red;">Back to Home</a>
+</div>-->
+<div style="text-align: center;">
+  <a href="{{ url_for('lesson_from_life') }}" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="{{ url_for('education_history') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>

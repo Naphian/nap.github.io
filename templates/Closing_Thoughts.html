@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meme</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <style>
+    body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: cover;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    /*text-align: center;
+    background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;background-color:powderblue;">Closing Thoughts: The Horizon Awaits You</h1>
+<p>The chapters of my life that you've explored here—my educational journey,
+  my professional experiences, my passions—are not mere landmarks of the past.
+  They're stepping stones, each contributing to a lifelong adventure that's
+  far from complete. But let's talk about your adventure for a moment. You've
+  heard my story, and now it's time to turn the focus to you, the one
+  visiting these digital pages. What are the dreams that keep you awake
+  at night? What are the barriers holding you back? Remember, hard work
+  and motivation are the essence of every success story. Your aspirations
+  may seem distant now, just as mine once did, but every step you take
+  brings you closer to that horizon. Believe in the beauty of the climb,
+  in the worth of the struggles. It's the journey that shapes us, and
+  when you reach your summit, the view will be unlike any other.</p>
+ <!-- Skills Section
+  <section style="padding: 20px; text-align: center;">
+    <h2>Skills</h2>
+    <p>I excel in:</p>
+    <ul style="list-style-type: none;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>-->
+<!--<div style="text-align: center;">
+  <a href="The%20Exit.html" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="Reward.html" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="AI%20web.html" style="font-size: 24px; color: red;">Back to Home</a>
+</div>-->
+<div style="text-align: center;">
+  <a href="{{ url_for('the_exit') }}" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="{{ url_for('reward') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>

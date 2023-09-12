@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Visits</title>
+</head>
+<body>
+    <h1>Page Visits</h1>
+    <ul>
+        {% for visit in visits %}
+            <li>{{ visit.page_name }} - {{ visit.timestamp }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Journey in my life</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <style>
+    h2
+    {
+      text-align: center;
+    }
+    h3
+    {
+      text-align: center;
+    }
+    body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: cover;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    /*text-align: center;
+    background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;background-color:powderblue;">Lessons from Life: More Than Just a Game or a Thrill</h1>
+<p>Life has an incredible way of teaching us lessons, often in the most
+  unexpected arenas. For me, those arenas have primarily been sports and
+  adventure. Each has not only tested my physical capabilities but has also
+  forged character, instilled discipline, and endowed me with valuable life
+  skills. In this section, I invite you to explore how I've taken
+  leaps—sometimes literally—to expand my horizons.</p>
+<h2 style="background-color:lightgreen;">I. Skills: The Symphony of Sports</h2>
+<p>My relationship with sports is not just a pastime; it's a journey
+  into the self. Among the myriad sports I've engaged in, swimming holds
+  a special place in my heart. Whether it's freestyle, backstroke,
+  breaststroke, butterfly, or the advanced dolphin and underwater techniques,
+  each stroke feels like a brush with meditation. I've even managed to hold
+  my breath underwater for almost two minutes, plunging into the depths as if
+  entering a sanctuary. Other sports like basketball, soccer, and running
+  have also played pivotal roles in shaping me. Each sport is like a chapter
+  in a grander tale, teaching me skills like teamwork, focus, and endurance.
+  But why take my word for it? In this section, you'll find pictures and
+  videos capturing some of my finest moments—from scoring the winning goal
+  in soccer to perfecting my butterfly stroke.</p>
+<!--
+Using HTML code
+<h2 style="background-color:lightgreen;">Here are some picture and videos :)</h2><br>
+  <video controls width="200";vedio-align="center";>
+    <source src="Swimming1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video><br>
+  using the flask app run
+<h2 style="background-color:lightgreen;">Here are some pictures and videos :)</h2><br>
+<video controls width="200">
+  <source src="{{ url_for('static', filename='Swimming1.mp4') }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video><br>-->
+
+<style>
+  .video-container {
+
+    display: flex;  /* Makes child elements display in a row */
+    justify-content: space-around;  /* Spreads the child elements evenly across the container */
+    align-items: center;  /* Aligns the items vertically in the center */
+  }
+  .video-item {
+  flex: 1;
+  text-align: center;
+  margin: 15px;
+}
+  video {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* this will help to keep the aspect ratio */
+}
+
+.video-caption {
+  font-size: 18px;
+  color: whitesmoke;
+  text-align: center;
+}
+</style>
+
+<div class="video-container">
+  <div class="video-item">
+    <video controls>
+      <source src="{{ url_for('static', filename='Swimming1.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-caption">Swimming</p>
+  </div>
+</div>
+
+<h2 style="background-color:lightgreen;">II. Adventure: The Excitement of the Unknown</h2>
+<p>If sports are my way of conversing with my inner self, adventures are
+  my dialogues with the world. My thirst for thrills has led me to embrace
+  every adventure opportunity that comes my way. I've ridden jet skis, plunged
+  into raging waters, screamed my lungs out on roller coasters, ice-skated,
+  swum with sharks, skydived, and zoomed through terrains on an ATV, among
+  others. Each adventure is like a new flavor of life, instantly invigorating
+  and eternally unforgettable. And it's not just about the adrenaline rush.
+  Adventures teach resilience, quick thinking, and the appreciation for the
+  sheer variety of experiences life has to offer. Trust me; the pictures and
+  videos you'll find here will do a better job of narrating these
+  unforgettable moments than any words ever could.</p>
+
+<h2 style="background-color:lightgreen;">Here are the pics and videos :)</h2><br>
+<!--please add the vedio and pic of adventure here-->
+<div class="video-container">
+  <div class="video-item">
+    <video controls>
+      <source src="{{ url_for('static', filename='Jet_ski.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-caption">Jet Ski Adventure</p>
+  </div>
+  <div class="video-item">
+    <video controls>
+      <source src="{{ url_for('static', filename='Swim_with_shark.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-caption">Swimming with Sharks</p>
+  </div>
+  <div class="video-item">
+    <img src="{{ url_for('static', filename='ATV ride.jpg') }}" alt="ATV Ride">
+    <p class="video-caption">ATV Ride</p>
+  </div>
+</div>
+
+<h2 style="background-color:lightgreen;">Conclusion: The Big Picture</h2>
+<p>As you scroll through the photos and videos encapsulating my sportsmanship
+  and adventurous spirit, remember that each snapshot is more than
+  just a memory. They are freeze-frames of life lessons, of overcoming
+  fears, of mastering skills, and of embracing the pure joy of living. These
+  sports and adventures have taught me that life is not about waiting for the
+  storm to pass but about learning how to dance in the rain—or swim through it,
+  as my case may be. They have made me realize that we are all on a perpetual
+  journey of self-discovery and that it is our experiences that shape us, not
+  our fears or hesitations.</P>
+<p>In conclusion, these activities are not just hobbies for me; they are
+  classrooms without walls, teachers without lectures, and lessons without
+  textbooks. Through each sport, each adventure, I've learned not just about
+  the world around me but also about the world within me. And that, in my
+  opinion, is the biggest adventure of them all. I hope you enjoy the visual
+  journey as much as I've enjoyed living these moments. Thank you for sharing
+  this chapter of my life story with me. Feel free to embark on your own
+  adventures and don't forget to make a splash along the way!</p>
+<style>
+.image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.image-item {
+  flex: 1;
+  lex-shrink: 0; /* Don't shrink smaller than content */
+  flex-grow: 1;   /* Allow item to grow */
+  margin: 15px;
+  min-width: 300px; /* Minimum width */
+  min-height: 300px; /* Minimum height */
+  transition: transform .2s ease-in-out;
+}
+
+.image-item img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* To maintain aspect ratio */
+}
+
+.image-item:hover {
+  transform: scale(1.1);
+}
+</style>
+<div class="image-gallery">
+  <div class="image-item">
+    <img src="{{ url_for('static', filename='NASA.jpg') }}" alt="NASA">
+  </div>
+  <div class="image-item">
+    <img src="{{ url_for('static', filename='Rovers.jpg') }}" alt="Rovers">
+  </div>
+  <div class="image-item">
+    <img src="{{ url_for('static', filename='Grad_2023.jpg') }}" alt="Grad 2023">
+  </div>
+</div>
+
+<div style="text-align: center;">
+  <a href="{{ url_for('reward') }}" style="margin-right: 20px; font-size: 24px; color: red;">Next</a>
+  <a href="{{ url_for('experience') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>

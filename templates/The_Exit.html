@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Exit</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <style>
+    body
+  {
+      /*background-image: url(Astro1.2.jpg);*/
+      background-image: url("{{ url_for('static', filename='Astro1.2.jpg') }}");
+      background-size: cover;  /*Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+  }
+    p
+  {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: white;
+    /*text-align: center;
+    background-color: lightcyan;*/
+    background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+  }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;background-color:powderblue;">The Exit: The Sum of Our Stories</h1>
+<p>As you move away from this space, think of your own path as not being
+  separate from mine or anyone else's. We are all bound by the stories we
+  live and the dreams we nurture. The certificates I've earned and the skills
+  I've honed are not just milestones but testaments to the fact that the paths
+  we choose have the power to shape us, to make us better versions of
+  ourselves. Your future is a blank canvas, and you hold the brush.
+  So why not reach out and share your story? Let's weave the fabric
+  of our stories tighter, turning single threads into a tapestry of
+  collective ambition and fulfillment.</p>
+<p>Thank you for spending this time with me. My hope is that you leave
+  here more determined than ever to embrace the work, the sweat, the
+  failures, and the triumphs that make life a beautiful, ongoing act of
+  becoming.</p>
+<!--<div style="text-align: center;">
+  <a href="Closing%20Thoughts.html" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="AI_web.html" style="font-size: 24px; color: red;">Back to Home</a>
+</div>-->
+<div style="text-align: center;">
+  <a href="{{ url_for('closing_thoughts') }}" style="margin-right: 20px; font-size: 24px; color: red;">Previous</a>
+  <a href="{{ url_for('ai_web') }}" style="font-size: 24px; color: red;">Back to Home</a>
+</div>
+</body>
+</html>

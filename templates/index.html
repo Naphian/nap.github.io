@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Site</title>
+  <script type="text/javascript">
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if(password === "1") {  // Replace 'letmein' with your actual password
+        window.location.href = "/AI_web";  // Redirect to next page through Flask route
+      } else {
+        alert("Wrong password");
+      }
+      /*window.location.href = "/History";*/
+    }
+  </script>
+  <style>
+    /* Style the body */
+    body {
+      /*background-image: url('your-image-url-here');*/
+      background-image: url("{{ url_for('static', filename='Astro2.jpg') }}");
+      background-size: cover;
+      text-align: center;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      /*make a center for body*/
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* 100% of the viewport height */
+
+    }
+    .container
+    {
+      text-align: center;
+    }
+    /* Style the input box and button */
+    input[type=password], button {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    /* Style the heading */
+    h1 {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 style="color: black; font-family: 'Times New Roman';">Welcome to My Site</h1>
+  <p style="color: white;font-family: 'Times New Roman';font-size: 30px; background-color: lightblue;">To proceed, please enter the password:</p>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Proceed</button>
+</div>
+</body>
+</html>
