@@ -42,7 +42,7 @@ def experience():
     record_visit('experience')
     return render_template('Experience.html')
 
-@app.route('/Lesson_From_Life')
+@app.route('/Lesson_from_life')
 def lesson_from_life():
     record_visit('lesson_from_life')
     return render_template('Lesson_from_life.html')
