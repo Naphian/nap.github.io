@@ -2,10 +2,33 @@ import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from flask_talisman import Talisman
+
+# Define a Config class for configuration settings
+class Config:
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///site.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+class DevelopmentConfig(Config):
+    DEBUG = True
+
+class ProductionConfig(Config):
+    DEBUG = False
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+Talisman(app)
+# Set configuration based on environment
+if os.environ.get('FLASK_ENV') == 'production':
+    app.config.from_object(ProductionConfig)
+else:
+    app.config.from_object(DevelopmentConfig)
+
+# Initialize database
 db = SQLAlchemy(app)
+
+#app = Flask(__name__)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+#db = SQLAlchemy(app)
 
 class Visit(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -68,9 +91,13 @@ def view_visits():
     return render_template('view_visits.html', visits=visits)
 
 
+# if __name__ == '__main__':
+#    app.debug = False
+#        db.create_all()
+#    port = int(os.environ.get('PORT', 5000))
+#    app.run(host='0.0.0.0', port=port)
+
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
+    # Removed db.create_all() for production
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
-
