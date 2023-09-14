@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from flask_talisman import Talisman
+#from flask_talisman import Talisman
 
 # Define a Config class for configuration settings
 class Config:
@@ -23,7 +23,7 @@ db = SQLAlchemy(app)
 # Set configuration based on environment
 if os.environ.get('FLASK_ENV') == 'production':
     app.config.from_object(ProductionConfig)
-    Talisman(app)
+    #Talisman(app)
 else:
     app.config.from_object(DevelopmentConfig)
 
