@@ -17,8 +17,7 @@ class ProductionConfig(Config):
 
 app = Flask(__name__)
 
-# Initialize database
-db = SQLAlchemy(app)
+
 
 # Set configuration based on environment
 if os.environ.get('FLASK_ENV') == 'production':
@@ -27,7 +26,8 @@ if os.environ.get('FLASK_ENV') == 'production':
 else:
     app.config.from_object(DevelopmentConfig)
 
-
+# Initialize database
+db = SQLAlchemy(app)
 
 #app = Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
