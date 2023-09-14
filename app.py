@@ -16,15 +16,18 @@ class ProductionConfig(Config):
     DEBUG = False
 
 app = Flask(__name__)
-Talisman(app)
-# Set configuration based on environment
-if os.environ.get('FLASK_ENV') == 'production':
-    app.config.from_object(ProductionConfig)
-else:
-    app.config.from_object(DevelopmentConfig)
 
 # Initialize database
 db = SQLAlchemy(app)
+
+# Set configuration based on environment
+if os.environ.get('FLASK_ENV') == 'production':
+    app.config.from_object(ProductionConfig)
+    Talisman(app)
+else:
+    app.config.from_object(DevelopmentConfig)
+
+
 
 #app = Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
