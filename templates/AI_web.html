@@ -25,8 +25,9 @@
       height: 25vh; /* 100% of the viewport height */
       overflow: hidden;
       font-size: 5em;
-
+      word-wrap: break-word;
       white-space: break-spaces;
+    width: 100%status;
   }
     .letter
   {
@@ -119,7 +120,7 @@
     const letters = document.querySelectorAll('.letter');
     for (let i = 0; i < letters.length; i++) {
       const letter = letters[i];
-      const speed = 1.5;
+      const speed = 1;
       const height = 20;
       letter.style.color = `hsl(${i * 10}, 100%, 50%)`;
       /*text*/
