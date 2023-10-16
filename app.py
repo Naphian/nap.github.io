@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-#from flask_talisman import Talisman
+from flask_talisman import Talisman
 
 # Define a Config class for configuration settings
 class Config:
@@ -28,7 +28,13 @@ else:
 
 # Initialize database
 db = SQLAlchemy(app)
+csp = {
+    'default-src': '\'self\'',
+    'script-src': '\'self\' \'unsafe-inline\'',
+    'style-src': '\'self\' \'unsafe-inline\''
+}
 
+talisman = Talisman(app, content_security_policy=csp)
 #app = Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 #db = SQLAlchemy(app)
